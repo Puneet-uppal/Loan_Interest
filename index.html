@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Interest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Interest Helper</h1>
+        <input type="text" id="amount" placeholder="Enter Principle Amount">
+        <input type="number" placeholder="Loan Tenure" id="tenure">
+        <h2>Interest Rates</h2>
+        <div class="table">
+            <ul><a href="#">HDFC</a>: 10.5%p.a. - 21.00%p.a.</ul>
+            <ul><a href="#">ICICI</a>: 10.7%p.a. - 19.00%p.a</ul>
+            <ul><a href="#">YES Bank</a>: 10.99%p.a. - 20.00%p.a.</ul>
+            <ul><a href="#">Axis Bank</a>: 10.49%p.a. - 22.00%p.a.</ul>
+        </div>
+        <input type="text" placeholder="Name of Bank (Preffered by user)" id="bank">
+        <div class="category">
+            <a>Home |</a><a> Education |</a><a> Car |</a><a> Personal |</a><a> Gold</a>
+            <input type="text" placeholder="Loan For( Category )" id="for">
+        </div>
+        <button class="btn" onclick="result()">Check final Interest rate(per month)</button>
+        <h1 id="emi" class="emi"></h1>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
